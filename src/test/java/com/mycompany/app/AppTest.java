@@ -26,7 +26,7 @@ public class AppTest
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
       ArrayList<Integer> array2 = new ArrayList<>(Arrays.asList(5, 6, 7, 8));
         array.addAll(array2);
-      assertFalse(new App().search(array, 7));
+      assertTrue(new App().search(array, 7));
     }
     public void testNull() {
       assertFalse(new App().search(null, 1));
