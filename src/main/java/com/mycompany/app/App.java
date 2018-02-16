@@ -33,7 +33,7 @@ public class App
 
         post("/compute", (req, res) -> {
           //System.out.println(req.queryParams("input1"));
-          //System.out.println(req.queryParams("input2"));
+          //System.out.println(req.queryParams("input4"));
 
           String input1 = req.queryParams("input1");
           java.util.Scanner sc1 = new java.util.Scanner(input1);
@@ -47,10 +47,10 @@ public class App
           System.out.println(inputList);
 
 
-          String input2 = req.queryParams("input2").replaceAll("\\s","");
-          int input2AsInt = Integer.parseInt(input2);
+          String input4 = req.queryParams("input4").replaceAll("\\s","");
+          int input4AsInt = Integer.parseInt(input4);
 
-          boolean result = App.search(inputList, input2AsInt);
+          boolean result = App.search(inputList, input4AsInt);
 
          Map map = new HashMap();
           map.put("result", result);
