@@ -1,7 +1,9 @@
+package com.mycompany.app;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import junit.framework.Test;
+import junit.framework.TestCase;
 
 public class AppTest 
     extends TestCase
